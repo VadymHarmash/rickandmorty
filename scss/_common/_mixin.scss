@@ -1,0 +1,8 @@
+@mixin decsriprionParagraph($top, $side, $bottom, $weight, $size, $height, $spacing) {
+    margin: $top $side $bottom;
+    font-family: 'Roboto';
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+}
