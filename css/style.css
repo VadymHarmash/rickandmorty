@@ -74,7 +74,7 @@ select {
   width: 100%;
   font-size: 16px;
   padding: 16px 48px;
-  background-image: url("/icons/filter.png");
+  background-image: url("../../icons/filter.png");
   background-repeat: no-repeat;
   background-position: top 20px left 19px;
   font-family: "Roboto";
