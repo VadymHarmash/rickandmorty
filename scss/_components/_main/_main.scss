@@ -18,7 +18,7 @@
             width: 100%;
             font-size: 16px;
             padding: 16px 48px;
-            background-image: url('../../icons/filter.png');
+            background-image: url('../icons/filter.png');
             background-repeat: no-repeat;
             background-position: top 20px left 19px;
             font-family: 'Roboto';
@@ -26,30 +26,37 @@
             border: 1px solid rgba(0, 0, 0, 0.5);
             border-radius: 8px;
         }
+
+        &__field{
+            display: none;
+        }
     }
 
     &__characters {
         width: 100%;
 
         &__row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @extend %center;
             flex-wrap: wrap;
             margin: 12px 0 176px;
 
             .character {
                 box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
                 border-radius: 4px;
-                margin: 12px 0;
-                cursor: pointer;
+                margin: 12px 5px;
                 transition: transform .2s;
+                text-decoration: none;
+                color: #000000;
 
                 &__name {
                     @include decsriprionParagraph(14px, 16px, 0, 500, 20px, 30px, 0.15px)
                 }
 
-                &__race {
+                &__image{
+                    margin: 0 auto;
+                }
+
+                &__species {
                     @include decsriprionParagraph(0, 16px, 12px, 400, 14px, 21px, 0.25px)
                 }
 

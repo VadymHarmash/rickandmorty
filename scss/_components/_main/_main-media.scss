@@ -62,7 +62,6 @@
                 margin: 0;
 
                 .character {
-                    width: 312px;
                     margin: 16px 0;
 
                     &:first-child {
@@ -71,10 +70,6 @@
 
                     &:last-child {
                         margin-bottom: 0;
-                    }
-
-                    img {
-                        width: 100%;
                     }
                 }
             }
